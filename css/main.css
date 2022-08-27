@@ -2189,12 +2189,16 @@ header{
 	color: #000000;
 }
 #stats .stat-count {
+	display: inline;
 	color: #FFFFFF;
 	font-size: 3.6rem;
 	margin-top: 1.2rem;
 	margin-bottom: 0;
 	font-family: "poppins-medium", sans-serif;
 	color: white;
+}
+#stats .stat-count + span {
+	color: #fff;
 }
 #stats .stat-title {
 	color: rgba(255, 255, 255, 0.5);
