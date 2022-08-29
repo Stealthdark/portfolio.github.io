@@ -1347,7 +1347,7 @@ header {
   padding: 0;
 }
 .main-navigation li a {
-  display: block;
+  display: inline-block;
   color: #ffffff;
   width: auto;
   padding: 15px 0;
