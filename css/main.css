@@ -1026,7 +1026,6 @@ input::-moz-focus-inner {
 .skill-bars li .progress {
   cursor: pointer;
   background: #cc005f;
-  position: relative;
   height: 100%;
 }
 .skill-bars li .progress span {
