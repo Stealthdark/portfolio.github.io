@@ -1503,7 +1503,9 @@ header {
   color: #ffffff;
 }
 .intro-social li a:hover,
-.intro-social li a:focus {
+.intro-social li a:focus,
+.footer-social a:hover,
+.footer-social a:focus {
   color: #cc005f;
 }
 
