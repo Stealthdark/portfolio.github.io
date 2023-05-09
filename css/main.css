@@ -1637,7 +1637,7 @@ header {
   font-size: 1.5rem;
   line-height: 3rem;
 }
-.about-content .info-list li span {
+.about-content .info-list li span, .about-content .info-list a {
   display: block;
   font-family: "poppins-regular", sans-serif;
   color: #888888;
