@@ -23,34 +23,37 @@
   /* FitText Settings
   	------------------------------------------------------ */
   setTimeout(function () {
-    $("#intro h1").fitText(1, { minFontSize: "36px", maxFontSize: "84px" });
+    $("#intro h1").fitText(1, {
+      minFontSize: "36px",
+      maxFontSize: "84px"
+    });
   }, 100);
 
   /*---------------------------------------------------- */
   /* FitVids
 	------------------------------------------------------ */
-  $(".fluid-video-wrapper").fitVids();
+  // $(".fluid-video-wrapper").fitVids();
 
   /*---------------------------------------------------- */
   /* Owl Carousel
 	------------------------------------------------------ */
-  $("#owl-slider").owlCarousel({
-    navigation: false,
-    pagination: true,
-    itemsCustom: [
-      [0, 1],
-      [700, 2],
-      [960, 3],
-    ],
-    navigationText: false,
-  });
+  // $("#owl-slider").owlCarousel({
+  //   navigation: false,
+  //   pagination: true,
+  //   itemsCustom: [
+  //     [0, 1],
+  //     [700, 2],
+  //     [960, 3],
+  //   ],
+  //   navigationText: false,
+  // });
 
   /*----------------------------------------------------- */
   /* Alert Boxes
   	------------------------------------------------------- */
-  $(".alert-box").on("click", ".close", function () {
-    $(this).parent().fadeOut(500);
-  });
+  // $(".alert-box").on("click", ".close", function () {
+  //   $(this).parent().fadeOut(500);
+  // });
 
   /*----------------------------------------------------- */
   /* Stat Counter
@@ -64,37 +67,38 @@
         stats.each(function () {
           var $this = $(this);
 
-          $({ Counter: 0 }).animate(
-            { Counter: $this.text() },
-            {
-              duration: 4000,
-              easing: "swing",
-              step: function (curValue) {
-                $this.text(Math.ceil(curValue));
-              },
-            }
-          );
+          $({
+            Counter: 0
+          }).animate({
+            Counter: $this.text()
+          }, {
+            duration: 5000,
+            easing: "swing",
+            step: function (curValue) {
+              $this.text(Math.ceil(curValue));
+            },
+          });
         });
       }
 
       // trigger once only
-      this.destroy();
+      // this.destroy();
     },
 
-    offset: "90%",
+    offset: "100%",
   });
 
   /*---------------------------------------------------- */
   /*	Masonry
 	------------------------------------------------------ */
-  var containerProjects = $("#folio-wrapper");
+  // var containerProjects = $("#folio-wrapper");
 
-  containerProjects.imagesLoaded(function () {
-    containerProjects.masonry({
-      itemSelector: ".folio-item",
-      resize: true,
-    });
-  });
+  // containerProjects.imagesLoaded(function () {
+  //   containerProjects.masonry({
+  //     itemSelector: ".folio-item",
+  //     resize: true,
+  //   });
+  // });
 
   /*----------------------------------------------------*/
   /*	Modal Popup
@@ -125,14 +129,31 @@
     nav.slideToggle();
   });
 
-  // nav items
-  nav.find("li a").on("click", function () {
-    // update the toggle button
-    toggleButton.toggleClass("is-clicked");
-    // fadeout the navigation panel
-    nav.fadeOut();
-  });
+  // // nav items
+  // nav.find("li a").on("click", function () {
+  //   // update the toggle button
+  //   toggleButton.toggleClass("is-clicked");
+  //   // fadeout the navigation panel
+  //   nav.fadeOut();
+  // });
 
+  // document.addEventListener('scroll', function (e) {
+  //   var top = window.pageYOffset + window.innerHeight,
+  //     isVisible = top > document.querySelector('#about > .progress').offsetTop;
+  //     alert("Reached");
+
+    // if (isVisible) {
+    //   document.getElementsByClassName('progress').classList.add('animate');
+    // }
+  // });
+
+  $(window).on('scroll', function (e) {
+    var top = $(window).scrollTop() + $(window).height(),
+        isVisible = top > $('#about .progress').offset().top;
+        // alert("reached")
+ 
+    $('.progress').toggleClass('animate', isVisible);
+ });
   /*---------------------------------------------------- */
   /* Highlight the current section in the navigation bar
   	------------------------------------------------------ */
@@ -150,9 +171,10 @@
       var active_link = $(
         '#main-nav-wrap a[href="#' + active_section.attr("id") + '"]'
       );
-
       navigation_links.parent().removeClass("current");
       active_link.parent().addClass("current");
+      // navigation_links.parent().removeClass("current");
+      // active_link.parent().addClass("current");
     },
 
     offset: "25%",
@@ -163,15 +185,14 @@
   	------------------------------------------------------ */
   $(".smoothscroll").on("click", function (e) {
     e.preventDefault();
-	console.log("test");
+    console.log("test");
 
     var target = this.hash,
       $target = $(target);
 
     $("html, body")
       .stop()
-      .animate(
-        {
+      .animate({
           scrollTop: $target.offset().top,
         },
         800,
