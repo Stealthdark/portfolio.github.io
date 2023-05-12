@@ -129,13 +129,16 @@
     nav.slideToggle();
   });
 
-  // // nav items
-  // nav.find("li a").on("click", function () {
-  //   // update the toggle button
-  //   toggleButton.toggleClass("is-clicked");
-  //   // fadeout the navigation panel
-  //   nav.fadeOut();
-  // });
+  // nav items
+	if (screen.width < 768) {
+		alert("Screen less");
+//   nav.find("li a").on("click", function () {
+//     // update the toggle button
+//     toggleButton.remove("is-clicked");
+//     // fadeout the navigation panel
+//     nav.fadeOut();
+  });
+	}
 
   // document.addEventListener('scroll', function (e) {
   //   var top = window.pageYOffset + window.innerHeight,
