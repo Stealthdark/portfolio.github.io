@@ -131,9 +131,10 @@
 
   // nav items
 	if (screen.width < 768) {
+		alert("screen is less");
   nav.find("li a").on("click", function () {
     // update the toggle button
-    toggleButton.remove("is-clicked");
+    toggleButton.toggleClass("is-clicked");
     // fadeout the navigation panel
     nav.fadeOut();
   });
