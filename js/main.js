@@ -131,7 +131,6 @@
 
   // nav items
 	if (screen.width < 768) {
-		alert("screen is less");
   nav.find("li a").on("click", function () {
     // update the toggle button
     toggleButton.toggleClass("is-clicked");
