@@ -1,0 +1,8 @@
+:root {
+    --primary: #ff0077;
+    --mat-grey: #313131;
+    --base-gradient: rgb(210, 54, 123);
+    --primary-linear-gradient: linear-gradient(90deg, rgba(210, 54, 123, 1) 0%, rgba(255, 27, 133, 1) 50%, rgba(191, 25, 98, 1) 100%);
+    --white-linear-gradient: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+    --grey-linear-gradient: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}

@@ -139,21 +139,10 @@
   });
 	}
 
-  // document.addEventListener('scroll', function (e) {
-  //   var top = window.pageYOffset + window.innerHeight,
-  //     isVisible = top > document.querySelector('#about > .progress').offsetTop;
-  //     alert("Reached");
-
-    // if (isVisible) {
-    //   document.getElementsByClassName('progress').classList.add('animate');
-    // }
-  // });
 
   $(window).on('scroll', function (e) {
     var top = $(window).scrollTop() + $(window).height(),
-        isVisible = top > $('#about .progress').offset().top;
-        // alert("reached")
- 
+    isVisible = top > $('#about .progress').offset().top;
     $('.progress').toggleClass('animate', isVisible);
  });
   /*---------------------------------------------------- */
