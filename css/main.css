@@ -37,7 +37,7 @@
   box-sizing: border-box;
 }
 
-html {
+html, body {
   transition: all .3s ease-in-out;
   scroll-behavior: smooth;
   font-size: 16px;
