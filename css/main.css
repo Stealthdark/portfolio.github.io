@@ -41,7 +41,7 @@ html {
   transition: all .3s ease-in-out;
   scroll-behavior: smooth;
   font-size: 16px;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 /* for restricting page scroll */
