@@ -1664,8 +1664,8 @@ section#intro::after {
 }
 
 /* Section quote styling STARTS here */
-section:has( .section-quote) { 
-  padding: 12rem 0 !important;
+/* section:has( .section-quote) { 
+  padding: 15rem 0 !important;
 }
 
 .section-quote {
@@ -1718,7 +1718,7 @@ section:has( .section-quote) {
   .section-quote {
       top: 0;
   }
-}
+} */
 
 /* SECTION QUOTE STYING ENDS HERE*/
 @media(max-width: 767px) {
