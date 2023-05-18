@@ -2857,6 +2857,7 @@ footer .copyright p {
   padding: 10px 20px;
   font-size: 1rem;
   font-weight: 700;
+  transition: all .3s ease-in-out;
   text-transform: uppercase;
 }
 
@@ -2922,8 +2923,10 @@ footer .copyright p {
 
 .btn.wave-btn:hover {
   box-shadow: 0 0 5px var, inset 0 0 5px #ff0077;
-  /* background-color: #ff0077; */
   transition-delay: 0.2s all ease-in-out;
+  -webkit-box-shadow: 0px 0px 10px 3px rgba(64,64,64,1);
+  -moz-box-shadow: 0px 0px 10px 3px rgba(64,64,64,1);
+  box-shadow: 0px 0px 10px 3px rgba(64,64,64,1);
 }
 
 @media (max-width: 575px) {
