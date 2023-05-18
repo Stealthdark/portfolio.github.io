@@ -1683,7 +1683,7 @@ section:has( .section-quote) {
     position: absolute;
     left: 0;
     right: 0;
-    background: var(--base-gradient);
+    background: linear-gradient(90deg, rgba(210, 54, 123, 0.4) 0%, rgba(255, 27, 133, 1) 50%, rgba(191, 25, 98, 0.75) 100%);
     width: 100%;
     height: 8px;
     animation: lineAnimate 5s ease infinite;
@@ -1694,7 +1694,7 @@ section:has( .section-quote) {
     top: -15px;
 }
 
-.section-quote::before {
+.section-quote::after {
     bottom: -15px;
 }
 
