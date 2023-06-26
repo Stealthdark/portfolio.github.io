@@ -50,10 +50,10 @@ html:has(.menu-toggle.is-clicked) {
 }
 
 html::-webkit-scrollbar {
-  width: 5px;
+  width: 3px;
 }
 html::-webkit-scrollbar-thumb {
-  background-color :#cc005f;
+  background: var(--primary-linear-gradient);
   border-radius: 8px;
 }
 
