@@ -2689,10 +2689,11 @@ section#intro::after {
   font-size: 1.5rem;
   display: block;
   letter-spacing: 0.2rem;
-  line-height: 1.5;
+  line-height: 1;
   padding: 15px;
   margin: 4.8rem auto 0 auto;
-  max-width: 300px;
+  max-width: 285px;
+  border-radius: 5px;
   width: 100%;
   background: var(--primary);
   color: #ffffff;
