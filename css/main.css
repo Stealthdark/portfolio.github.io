@@ -37,7 +37,8 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   transition: all .3s ease-in-out;
   scroll-behavior: smooth;
   font-size: 16px;
@@ -52,6 +53,7 @@ html:has(.menu-toggle.is-clicked) {
 html::-webkit-scrollbar {
   width: 3px;
 }
+
 html::-webkit-scrollbar-thumb {
   background: var(--primary-linear-gradient);
   border-radius: 8px;
@@ -1091,19 +1093,18 @@ input::-moz-focus-inner {
 }
 
 .section-intro {
-  max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
   margin-bottom: 3.6rem;
   /* position: relative; */
 }
+
 section {
   position: relative;
 }
+
 section .container {
   position: static;
 }
+
 .section-intro h1 {
   font-family: "poppins-semibold", serif;
   font-size: 3.6rem;
@@ -1544,6 +1545,7 @@ section#intro::after {
 .intro-content .btn {
   margin-top: 1.5rem;
 }
+
 .intro-content .btn::after {
   display: inline-block;
   content: "\f107";
@@ -1730,14 +1732,16 @@ section#intro::after {
 
 /* SECTION QUOTE STYING ENDS HERE*/
 @media(max-width: 767px) {
-section {
-padding: 5rem 0;
-}
-.section-quote {
-top: 0;
-}
+  section {
+    padding: 5rem 0;
+  }
+
+  .section-quote {
+    top: 0;
+  }
 
 }
+
 #about .section-intro {
   margin-bottom: 3rem;
 }
@@ -2205,6 +2209,27 @@ top: 0;
   transform: scale(1.05);
 }
 
+.project-wrapper .thumbnail-wrapper {
+  border: 5px solid black;
+  max-height: 562px;
+  overflow: hidden;
+}
+
+.project-wrapper .content-wrap {
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.9);
+  padding: 15px;
+}
+
+.project-wrapper .content-wrap p {
+  margin-bottom: 0;
+  color: #fff;
+  transition: all .3s ease-in-out;
+}
+.project-wrapper .thumbnail-wrapper:hover p {
+  color: #ff0077;
+}
 /**
  * responsive:
  * portfolio
@@ -2654,7 +2679,8 @@ top: 0;
   letter-spacing: 0.2rem;
   line-height: 1.5;
   padding: 15px;
-  margin-top: 4.8rem;
+  margin: 4.8rem auto 0 auto;
+  max-width: 300px;
   width: 100%;
   background: var(--primary);
   color: #ffffff;
@@ -2978,7 +3004,7 @@ footer .copyright p {
 .btn.wave-btn .liquid::before {
   border-radius: 40%;
   box-shadow: 0 0 10px rgba(26, 26, 26, 0.5),
-      inset 0 0 5px rgba(26, 26, 26, 0.5);
+    inset 0 0 5px rgba(26, 26, 26, 0.5);
   background: rgba(26, 26, 26, 0.5);
 
   animation: animate 7s linear infinite;
@@ -2986,14 +3012,16 @@ footer .copyright p {
 
 @keyframes animate {
   0% {
-      transform: translate(-25%, -75%) rotate(0);
+    transform: translate(-25%, -75%) rotate(0);
   }
+
   100% {
-      transform: translate(-25%, -75%) rotate(360deg);
+    transform: translate(-25%, -75%) rotate(360deg);
   }
 }
+
 .btn.wave-btn:hover .liquid {
-  top: -120px ;
+  top: -120px;
 }
 
 .btn.wave-btn:hover {
