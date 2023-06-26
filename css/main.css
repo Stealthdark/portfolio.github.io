@@ -49,6 +49,14 @@ html:has(.menu-toggle.is-clicked) {
   overflow: hidden;
 }
 
+html::-webkit-scrollbar {
+  width: 5px;
+}
+html::-webkit-scrollbar-thumb {
+  background-color :#cc005f;
+  border-radius: 8px;
+}
+
 @media (max-width: 1024px) {
   html {
     font-size: 14px;
