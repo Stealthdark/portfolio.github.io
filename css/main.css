@@ -2212,12 +2212,22 @@ section#intro::after {
 .project-wrapper .thumbnail-wrapper {
   border: 5px solid black;
   max-height: 562px;
-  overflow: hidden;
+  overflow-y: auto;
+}
+
+.project-wrapper .thumbnail-wrapper::-webkit-scrollbar {
+  width: 3px;
+}
+
+.project-wrapper .thumbnail-wrapper::-webkit-scrollbar-thumb {
+  background-color: #545454;
+  border-radius: 8px;
 }
 
 .project-wrapper .content-wrap {
   bottom: 0;
-  left: 0;
+  left: 15px;
+  width: calc(100% - 30px);
   background: rgba(0, 0, 0, 0.9);
   padding: 15px;
 }
@@ -2227,9 +2237,11 @@ section#intro::after {
   color: #fff;
   transition: all .3s ease-in-out;
 }
+
 .project-wrapper .thumbnail-wrapper:hover p {
   color: #ff0077;
 }
+
 /**
  * responsive:
  * portfolio
