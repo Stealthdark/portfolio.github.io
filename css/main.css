@@ -2213,8 +2213,19 @@ section#intro::after {
   border: 5px solid black;
   max-height: 562px;
   overflow-y: auto;
+  position: relative;
 }
 
+.project-wrapper .thumbnail-wrapper::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #000;
+  opacity: 0.3;
+}
 .project-wrapper .thumbnail-wrapper::-webkit-scrollbar {
   width: 3px;
 }
